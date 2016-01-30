@@ -1,0 +1,17 @@
+# Problem Solving Tips
+
+One of the hardest things about programming is approaching a large problem and not knowing where to start. The following are a few tips to help you get started before your write a single line of code. The more time you spend planning and white boarding before you begin, the faster it will come when you sit down at the keyboard. Go slow now to go fast later.
+
+## Starting Fresh
+These are tips for when you're starting a project with a clean slate. At this point, all you have is "english" (the requirements for your project) and it's your job to translate that english to the computer. For the sake of simplicity, we'll use the example of our library project and solving it with javascript.
+
+<strong>1. Break Down your English</strong></br>
+This will require some knowledge of your "parts of speech". As you're thinking through what you want to build (or the requirements of your project), identify the key words. Specifically look for <strong>nouns</strong>, <strong>adjectives</strong>, <strong>verbs</strong> and the <strong>relationships</strong> amongst these items. For instance, in our libray project we had the nouns, <strong>library</strong>, <strong>books</strong> and <strong>people</strong> (logically, as we wanted people who could check out books from a library). In Javascript, objects make great nouns because they can have properties (adjectives) and methods (verbs) just like real-world nouns.  When thinking about the <strong>relationship</strong> between our nouns, we can deduce that libraries have books. Therefore, we need a way to store a bunch of book objects inside of our library object. Likewise, people interact with the library through checking books out. The act of "checking out a book" is a verb (good for a method, becuase functions are actions). People can check out books, but so can libraries, we know that when we call such a method, it has to involve both the person object and the library object (which is why we chose to pass in people through an argument). If it helps to visualize it, draw it out on a piece of of paper. 
+
+<strong>2. Stub Out your Modules</strong></br>
+"Modules" are different pieces of your code that are responsible for something specific. Like I said, in our example project, our main objects are <strong>person</strong>, <strong>library</strong> and <strong>book</strong>. We need multiple instances of all of these (with the exception of maybe the library, we probably only need one) so we can create constructor functions for each. This will give us the bulk of the structure of our code.
+
+<strong>3. Fill In your Logic</strong></br>
+This is obviously where most of the work lays, but take it step-by-step, keeping your eyes on the bigger picture. In the example of our library, if you did your set-up correctly, thinking about our "verbs" led us to create two functions on the <strong>library</strong> object, "checkOutBooks" and "returnBooks". Start with one of these and <strong>ask yourself as many questions as you can</strong> about it. What does it mean to check out a book? What "checks" the book out? How many books can be checked out at once? How do I find the book I want to check out? What resources do I have at my disposal to make this happen? 
+
+Finally, you just need to do it. Maybe the way you write it isn't the cleanest and the most effecient, but there's always room for peer-feedback and optimizing it later. Get used to others reading and criticizing your code. Nothing will make you better, faster.
